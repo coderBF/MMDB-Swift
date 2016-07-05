@@ -21,20 +21,18 @@ public struct MMDBCountry: CustomStringConvertible {
     init(dictionary: NSDictionary) {
         if let dict = dictionary["continent"],
             code = dict["code"] as? String,
-            continentNames = dict["names"] as? [String: String]
-        {
+            continentNames = dict["names"] as? [String: String] {
             continent.code = code
             continent.names = continentNames
         }
         if let dict = dictionary["country"],
             iso = dict["iso_code"] as? String,
-            countryNames = dict["names"] as? [String: String]
-        {
+            countryNames = dict["names"] as? [String: String] {
             self.isoCode = iso
             self.names = countryNames
         }
     }
-    
+
     public var description: String {
         var s = "{\n"
         s += "  \"continent\": {\n"
@@ -47,7 +45,7 @@ public struct MMDBCountry: CustomStringConvertible {
                 + $0.1 + "\""
                 + (i > 1 ? "," : "")
                 + "\n"
-            i--
+            i-=1
         }
         s += "    }\n"
         s += "  },\n"
@@ -60,7 +58,7 @@ public struct MMDBCountry: CustomStringConvertible {
                 + $0.1 + "\""
                 + (i > 1 ? "," : "")
                 + "\n"
-            i--
+            i-=1
         }
         s += "  }\n}"
         return s
@@ -139,7 +137,8 @@ final public class MMDB {
         return list.memory.entry_data.data_size
     }
 
-    private func dumpList(var list: ListPtr, toS: StringPtr) -> ListPtr {
+    private func dumpList(list: ListPtr, toS: StringPtr) -> ListPtr {
+        var list = list
         switch getType(list) {
 
         case MMDB_DATA_TYPE_MAP:
@@ -152,7 +151,7 @@ final public class MMDB {
 
                 list = list.memory.next
                 list = dumpList(list, toS: toS)
-                size--
+                size-=1
             }
             toS.memory += "},"
             break
@@ -184,7 +183,7 @@ final public class MMDB {
         }
 
         var entry = result.entry
-        var list = ListPtr()
+        var list: ListPtr = nil
 
         let status = MMDB_get_entry_data_list(&entry, &list)
         if status != MMDB_SUCCESS {
