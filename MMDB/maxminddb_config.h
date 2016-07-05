@@ -11,7 +11,7 @@
 #if TARGET_OS_IPHONE
 #define MMDB_UINT128_IS_BYTE_ARRAY 1
 #else
-#define MMDB_UINT128_IS_BYTE_ARRAY 0
+#undef MMDB_UINT128_IS_BYTE_ARRAY
 #endif
 #endif
 
