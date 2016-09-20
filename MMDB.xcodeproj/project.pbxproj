@@ -220,12 +220,15 @@
 				TargetAttributes = {
 					D716CB2E1C21432C00D89B5C = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					D716CB461C23A58700D89B5C = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					D716CB531C23A5DC00D89B5C = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -392,6 +395,7 @@
 				PRODUCT_NAME = MMDBDemo;
 				SWIFT_OBJC_BRIDGING_HEADER = "MMDB/MMDB-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -402,6 +406,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = MMDBDemo;
 				SWIFT_OBJC_BRIDGING_HEADER = "MMDB/MMDB-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -428,6 +433,7 @@
 				PRODUCT_NAME = MMDB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -454,6 +460,7 @@
 				PRODUCT_NAME = MMDB;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -480,6 +487,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lexrus.MMDB-OSX";
 				PRODUCT_NAME = MMDB;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -504,6 +512,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lexrus.MMDB-OSX";
 				PRODUCT_NAME = MMDB;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 2.3;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
