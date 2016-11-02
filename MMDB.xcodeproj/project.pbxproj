@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		364B155B1DC9DC660090D8BC /* MMDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364B155A1DC9DC660090D8BC /* MMDBTests.swift */; };
+		364B155D1DC9DC660090D8BC /* MMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D716CB541C23A5DC00D89B5C /* MMDB.framework */; };
 		D716CB331C21432C00D89B5C /* MMDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D716CB321C21432C00D89B5C /* MMDB.swift */; };
 		D716CB411C2269D200D89B5C /* maxminddb_unions.c in Sources */ = {isa = PBXBuildFile; fileRef = D716CB3F1C2269D200D89B5C /* maxminddb_unions.c */; };
 		D716CB5C1C23A65200D89B5C /* maxminddb.c in Sources */ = {isa = PBXBuildFile; fileRef = D73CAECC1C21A7A2000C2132 /* maxminddb.c */; };
@@ -31,6 +33,16 @@
 		D73CAED31C21AB0E000C2132 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73CAED21C21AB0E000C2132 /* main.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		364B155E1DC9DC660090D8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D716CB271C21432C00D89B5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D716CB531C23A5DC00D89B5C;
+			remoteInfo = "MMDB-OSX";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		D716CB2D1C21432C00D89B5C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -44,6 +56,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		364B15581DC9DC660090D8BC /* MMDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		364B155A1DC9DC660090D8BC /* MMDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MMDBTests.swift; sourceTree = "<group>"; };
+		364B155C1DC9DC660090D8BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D716CB2F1C21432C00D89B5C /* MMDBDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MMDBDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		D716CB321C21432C00D89B5C /* MMDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MMDB.swift; path = ../Sources/MMDB.swift; sourceTree = "<group>"; };
 		D716CB3B1C21437F00D89B5C /* MMDB-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMDB-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -63,6 +78,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		364B15551DC9DC660090D8BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364B155D1DC9DC660090D8BC /* MMDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D716CB2C1C21432C00D89B5C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -87,10 +110,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		364B15591DC9DC660090D8BC /* MMDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				364B155A1DC9DC660090D8BC /* MMDBTests.swift */,
+				364B155C1DC9DC660090D8BC /* Info.plist */,
+			);
+			path = MMDBTests;
+			sourceTree = "<group>";
+		};
 		D716CB261C21432C00D89B5C = {
 			isa = PBXGroup;
 			children = (
 				D716CB311C21432C00D89B5C /* MMDB */,
+				364B15591DC9DC660090D8BC /* MMDBTests */,
 				D716CB301C21432C00D89B5C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +134,7 @@
 				D716CB2F1C21432C00D89B5C /* MMDBDemo */,
 				D716CB471C23A58700D89B5C /* MMDB.framework */,
 				D716CB541C23A5DC00D89B5C /* MMDB.framework */,
+				364B15581DC9DC660090D8BC /* MMDBTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,6 +189,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		364B15571DC9DC660090D8BC /* MMDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 364B15621DC9DC660090D8BC /* Build configuration list for PBXNativeTarget "MMDBTests" */;
+			buildPhases = (
+				364B15541DC9DC660090D8BC /* Sources */,
+				364B15551DC9DC660090D8BC /* Frameworks */,
+				364B15561DC9DC660090D8BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				364B155F1DC9DC660090D8BC /* PBXTargetDependency */,
+			);
+			name = MMDBTests;
+			productName = MMDBTests;
+			productReference = 364B15581DC9DC660090D8BC /* MMDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D716CB2E1C21432C00D89B5C /* MMDBDemo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D716CB361C21432C00D89B5C /* Build configuration list for PBXNativeTarget "MMDBDemo" */;
@@ -214,10 +266,15 @@
 		D716CB271C21432C00D89B5C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = LexTang.com;
 				TargetAttributes = {
+					364B15571DC9DC660090D8BC = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
 					D716CB2E1C21432C00D89B5C = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0800;
@@ -247,11 +304,19 @@
 				D716CB2E1C21432C00D89B5C /* MMDBDemo */,
 				D716CB461C23A58700D89B5C /* MMDB-iOS */,
 				D716CB531C23A5DC00D89B5C /* MMDB-OSX */,
+				364B15571DC9DC660090D8BC /* MMDBTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		364B15561DC9DC660090D8BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D716CB451C23A58700D89B5C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,6 +336,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		364B15541DC9DC660090D8BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				364B155B1DC9DC660090D8BC /* MMDBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D716CB2B1C21432C00D89B5C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -304,7 +377,48 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		364B155F1DC9DC660090D8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D716CB531C23A5DC00D89B5C /* MMDB-OSX */;
+			targetProxy = 364B155E1DC9DC660090D8BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		364B15601DC9DC660090D8BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MMDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.MMDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		364B15611DC9DC660090D8BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MMDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = me.zhuhaow.osx.MMDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		D716CB341C21432C00D89B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -528,6 +642,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		364B15621DC9DC660090D8BC /* Build configuration list for PBXNativeTarget "MMDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				364B15601DC9DC660090D8BC /* Debug */,
+				364B15611DC9DC660090D8BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D716CB2A1C21432C00D89B5C /* Build configuration list for PBXProject "MMDB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

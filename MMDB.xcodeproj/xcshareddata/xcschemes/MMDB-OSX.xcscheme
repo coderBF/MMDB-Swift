@@ -28,7 +28,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "364B15571DC9DC660090D8BC"
+               BuildableName = "MMDBTests.xctest"
+               BlueprintName = "MMDBTests"
+               ReferencedContainer = "container:MMDB.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D716CB531C23A5DC00D89B5C"
+            BuildableName = "MMDB.framework"
+            BlueprintName = "MMDB-OSX"
+            ReferencedContainer = "container:MMDB.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
